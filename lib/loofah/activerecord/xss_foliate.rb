@@ -260,8 +260,8 @@ module Loofah
       end
     end
 
-    def self.xss_foliate_all_models
-      ::ActiveRecord::Base.xss_foliate
+    def self.xss_foliate_all_models(options = {})
+      ::ActiveRecord::Base.xss_foliate(options)
     end
   end
 end
